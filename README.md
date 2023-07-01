@@ -26,3 +26,12 @@ cd cppunify
 npm install
 npm install -g // May require administrator privileges
 ```
+
+For non-administrator users (on *nix systems),
+```
+cd cppunify
+npm install
+chmod +x cppunify.js
+export PATH="$PATH:$(pwd)"
+```
+This will install `cppunify.js` for the current terminal session. Consider adding the `cppunify/` directory to path in `.bashrc` for use across sessions.
